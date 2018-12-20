@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
+             xmlns:viewModels="clr-namespace:App1.ViewModel;assembly=App1"
+             x:Class="App1.MonkeysPage"
+              Title="Traditional Monkeys">
+    <ContentPage.BindingContext>
+        <viewModels:MonkeysViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <ListView ItemsSource="{Binding MonkeysGrouped}"                 
+                ItemTapped="ListView_ItemTapped"
+                ItemSelected="ListView_ItemSelected"
+                HasUnevenRows="true"
+                GroupShortNameBinding = "{Binding Key}"
+                IsGroupingEnabled = "true"
+                GroupDisplayBinding = "{Binding Key}">
+        <ListView.Header>
+            <cv:CarouselView x:Name="CarouselZoos" ItemsSource="{Binding Zoos}" HeightRequest="200" >
+                <cv:CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Image Grid.RowSpan="2" Aspect="AspectFill" Source="{Binding ImageUrl}"/>
+                            <StackLayout Grid.Row="1" BackgroundColor="#80000000" Padding="12">
+                                <Label TextColor="White" Text="{Binding Name}" FontSize="16" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+                            </StackLayout>
+                        </Grid>
+                    </DataTemplate>
+                </cv:CarouselView.ItemTemplate>
+            </cv:CarouselView>
+        </ListView.Header>
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image
+                       HeightRequest="66"
+                       HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
+                       Aspect="AspectFill"
+                       WidthRequest="66"
+                       Grid.RowSpan="2"
+                       Source="{Binding Image}"/>
+                        <Label Grid.Column="1"
+                       Text="{Binding Name}"
+                       VerticalOptions="End"/>
+                        <Label Grid.Column="1"
+                       Grid.Row="1"
+                       VerticalOptions="Start"
+                       Text="{Binding Location}"/>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    </ContentPage.Content>
+</ContentPage>

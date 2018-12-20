@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             x:Class="App1.MainPage">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Button x:Name="btnDatePicker" Text="Date Picker Sample" Clicked="BtnDatePicker_Clicked"/>
+        <Button x:Name="btnPicerForDates" Text="Date PickerPicker for dates Sample" Clicked="BtnPicerForDates_Clicked"/>
+        <Button x:Name="btnProgressbarSample" Text="Progress bar Sample" Clicked="BtnProgressbarSample_Clicked"/>
+        <Button x:Name="btnSliderSample" Text="Slider Sample" Clicked="BtnSliderSample_Clicked"/>
+        <Button x:Name="btnCarouselViewSample" Text="Carousel View Sample" Clicked="BtnCarouselViewSample_Clicked"/>
+        <Button x:Name="btnCarouselViewSample2" Text="Carousel View Sample 2" Clicked="BtnCarouselViewSample2_Clicked"/>
+        <Button x:Name="btnCarouselViewMonkeys" Text="Carousel View Monkeys" Clicked="BtnCarouselViewMonkeys_Clicked"/>
+    </StackLayout>
+
+</ContentPage>

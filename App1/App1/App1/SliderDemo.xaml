@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.SliderDemo">
+    <ContentPage.Content>
+        <StackLayout>
+            <Slider x:Name="sider2" Maximum="30" Minimum="0"  MinimumTrackColor="AliceBlue" MaximumTrackColor="BlueViolet"/>
+            <Label x:Name="lblTextProgress" Text="0" HorizontalOptions="Start" TextColor="Purple"
+               FontSize="Medium" HorizontalTextAlignment="Center">
+                <Label.Margin>
+                    <OnPlatform x:TypeArguments="Thickness">
+                        <On Platform="iOS" Value="15,0" />
+                        <On Platform="Android" Value="10,0"/>
+                    </OnPlatform>
+                </Label.Margin>
+            </Label>
+            <Slider x:Name="slidertest"  Maximum="100" Minimum="0" MaximumTrackColor="Pink" MinimumTrackColor="Purple"  
+               ThumbColor="Purple"
+                HorizontalOptions="FillAndExpand" ValueChanged="Slidertest_ValueChanged"></Slider>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
