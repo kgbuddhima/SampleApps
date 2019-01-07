@@ -53,5 +53,10 @@ namespace App1
         {
             Navigation.PushAsync(new MonkeysPage());
         }
+
+        private void BtnNavigationSectionDemo_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new PageWithNavigationUCView());
+        }
     }
 }

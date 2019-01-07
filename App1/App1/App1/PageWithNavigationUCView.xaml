@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:uc="clr-namespace:App1.UserControls;assembly=App1"
+             NavigationPage.HasNavigationBar="false"
+             x:Class="App1.PageWithNavigationUCView">
+    <ContentPage.Content>
+        <StackLayout Spacing="0">
+            <uc:NavigationSection />
+            <uc:NavigationSectionTwo StartColor="Yellow" EndColor="LightSeaGreen" Mode="ToTop"
+                BackButtonText="Back" HeadingText="Test Heading !" />
+            <uc:NavigationSectionTwo StartColor="Orange" EndColor="Yellow" Mode="ToBottomLeft"
+                BackButtonText="Back" HeadingText="Test Heading Two !" />
+            <Label Text="Gradient Testing"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -5,11 +5,11 @@
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms">
     >
     <ContentView.Content>
-        <Frame CornerRadius="0.5" BackgroundColor="White" x:Name="frameMyFrame">
+        <!--<Frame CornerRadius="0.5" x:Name="frameMyFrame">-->
             <StackLayout>
                 <ffimageloading:CachedImage x:Name="imgMyImage" DownsampleToViewSize="True" Aspect="AspectFill"/>
                 <Label x:Name="txtImageDesc" />
             </StackLayout>
-        </Frame>
+        <!--</Frame>-->
     </ContentView.Content>
 </ContentView>

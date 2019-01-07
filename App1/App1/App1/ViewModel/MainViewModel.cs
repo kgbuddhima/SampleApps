@@ -17,11 +17,11 @@ namespace App1.ViewModel
         {
             MyItemsSource = new ObservableCollection<View>()
             {
-                new View1(){ImageSource="image1.png",ImageDescription="Text 1",},
+                /*new View1(){ImageSource="image1.png",ImageDescription="Text 1",},
                 new View1(){ImageSource="image2.png",ImageDescription="Text 2",},
                 new View1(){ImageSource="c1.jpg",ImageDescription="Text 1",},
                 new View1(){ImageSource="c2.jpg",ImageDescription="Text 2",},
-                new View1(){ImageSource="c3.jpg",ImageDescription="Text 3",}
+                new View1(){ImageSource="c3.jpg",ImageDescription="Text 3",}*/
                /* new CachedImage() { Source = "image1.png", DownsampleToViewSize = true, Aspect = Aspect.AspectFill },
                 new CachedImage() { Source = "image2.png", DownsampleToViewSize = true, Aspect = Aspect.AspectFill },
                 new CachedImage() { Source = "c1.jpg", DownsampleToViewSize = true, Aspect = Aspect.AspectFill },
@@ -55,5 +55,11 @@ namespace App1.ViewModel
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+    }
+
+    public class SampleClass
+    {
+        public string ImageName { get; set; }
+        public string ImageText { get; set; }
     }
 }

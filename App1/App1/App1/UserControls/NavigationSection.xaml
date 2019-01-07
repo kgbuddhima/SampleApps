@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1.Renderers;assembly=App1"
+             x:Class="App1.UserControls.NavigationSection">
+    <ContentView.Content>
+        <local:GradientColorStack  x:Name="stackLayoutHeader" BackgroundColor="Maroon" 
+                                   StartColor="Blue" EndColor="LightGreen"
+                                   Padding="20,30,20,30">
+            <Label Text="Back" FontAttributes="Bold" TextColor="White"/>
+            <Label Text="Heading text" FontSize="Large"  TextColor="White"/>
+        </local:GradientColorStack>
+    </ContentView.Content>
+</ContentView>

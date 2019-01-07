@@ -23,11 +23,11 @@ namespace App1.UserControls
             get { return txtImageDesc.Text; }
             set { txtImageDesc.Text = value; }
         }
-        public Color FrameColor
+        /*public Color FrameColor
         {
             get { return frameMyFrame.BackgroundColor; }
             set { frameMyFrame.BackgroundColor = value; }
-        }
+        }*/
         public Color CaroseBackColor
         {
             get { return BackgroundColor; }
