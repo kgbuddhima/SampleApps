@@ -31,12 +31,6 @@ namespace App1.UserControls
             set { stackLayoutHeader.Mode = value; }
         }
 
-        public string BackButtonText
-        {
-            get { return lblback.Text; }
-            set { lblback.Text = value; }
-        }
-
         public string HeadingText
         {
             get { return lblHeading.Text; }
@@ -50,5 +44,10 @@ namespace App1.UserControls
             stackLayoutHeader.EndColor = EndColor;
             stackLayoutHeader.Mode = Mode;
         }
-	}
+
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
+        }
+    }
 }

@@ -10,7 +10,9 @@ namespace App1
         public App()
         {
             InitializeComponent();
-
+            Plugin.Iconize.Iconize.With(new Plugin.Iconize.Fonts.FontAwesomeSolidModule())
+                .With(new Plugin.Iconize.Fonts.FontAwesomeRegularModule())
+                .With(new Plugin.Iconize.Fonts.FontAwesomeBrandsModule());
             MainPage = new NavigationPage(new MainPage());
         }
 

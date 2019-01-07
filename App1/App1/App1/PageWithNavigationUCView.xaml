@@ -8,9 +8,9 @@
         <StackLayout Spacing="0">
             <uc:NavigationSection />
             <uc:NavigationSectionTwo StartColor="Yellow" EndColor="LightSeaGreen" Mode="ToTop"
-                BackButtonText="Back" HeadingText="Test Heading !" />
+                HeadingText="Test Heading !" />
             <uc:NavigationSectionTwo StartColor="Orange" EndColor="Yellow" Mode="ToBottomLeft"
-                BackButtonText="Back" HeadingText="Test Heading Two !" />
+                HeadingText="Test Heading Two !" />
             <Label Text="Gradient Testing"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />

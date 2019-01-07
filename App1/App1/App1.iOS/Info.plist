@@ -34,5 +34,11 @@
     <string>App1</string>
     <key>XSAppIconAssets</key>
     <string>Assets.xcassets/AppIcon.appiconset</string>
+  <key>UIAppFonts</key>
+  <array>
+    <string>iconize-fontawesome-regular.ttf</string>
+    <string>iconize-fontawesome-solid.ttf</string>
+    <string>iconize-fontawesome-brands.ttf</string>
+  </array>
 </dict>
 </plist>

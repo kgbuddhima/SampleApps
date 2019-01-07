@@ -2,12 +2,17 @@
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:App1.Renderers;assembly=App1"
+             xmlns:iconize="clr-namespace:Plugin.Iconize;assembly=Plugin.Iconize"
              x:Class="App1.UserControls.NavigationSectionTwo">
-  <ContentView.Content>
+    <ContentView.Content>
         <local:GradientColorStackAdvanced  x:Name="stackLayoutHeader" Padding="20,20,20,30" 
                        StartColor="Maroon" EndColor="MediumPurple" Mode="ToTopRight">
-            <Label x:Name="lblback" Text="Back" FontAttributes="Bold" TextColor="White"/>
-            <Label x:Name="lblHeading" Text="Heading text" FontSize="Large"  TextColor="White"/>
+            <iconize:IconLabel Text="fas-angle-left" TextColor="White" FontSize="40">
+                <iconize:IconLabel.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </iconize:IconLabel.GestureRecognizers>
+            </iconize:IconLabel>
+            <Label x:Name="lblHeading" Text="Heading text" FontSize="40"  TextColor="White"/>
         </local:GradientColorStackAdvanced>
     </ContentView.Content>
 </ContentView>

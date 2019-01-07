@@ -24,6 +24,7 @@ namespace App1.Droid
 
             var cv = typeof(Xamarin.Forms.CarouselView);
             var assembly = Assembly.Load(cv.FullName);
+            Plugin.Iconize.Iconize.Init(ToolbarResource, TabLayoutResource);
 
             LoadApplication(new App());
         }
