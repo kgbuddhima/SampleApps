@@ -71,6 +71,9 @@
     <None Update="DatePickerSample.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
+    <None Update="EntryWithBorderDemo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
     <None Update="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>

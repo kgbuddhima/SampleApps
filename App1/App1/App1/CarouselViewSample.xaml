@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App1.CarouselViewSample" 
              xmlns:cv="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             xmlns:local="clr-namespace:App1.UserControls;assembly=App1"
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms">
     <StackLayout Padding="10,10,10,10">
         <cv:CarouselViewControl x:Name="carousel" HorizontalOptions="Center" HeightRequest="300"
@@ -18,10 +19,25 @@
         Orientation="Horizontal">
             <cv:CarouselViewControl.ItemTemplate>
                 <DataTemplate>
-                    <StackLayout>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="30"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <ffimageloading:CachedImage x:Name="imgMyImage" Source="{Binding ImageName}" 
+                                            Grid.Column="0" Grid.Row="0" Grid.RowSpan="2"   DownsampleToViewSize="True" Aspect="AspectFill"/>
+                        <Label x:Name="txtImageDesc" Text="{Binding ImageText}" BackgroundColor="White"  Grid.Column="0" Grid.Row="1"
+                               HorizontalOptions="FillAndExpand"/>
+                        <BoxView BackgroundColor="DarkBlue" Grid.Column="0" Grid.Row="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+                    </Grid>
+                    <!--<StackLayout>
                         <ffimageloading:CachedImage x:Name="imgMyImage" DownsampleToViewSize="True" Aspect="AspectFill"/>
                         <Label x:Name="txtImageDesc" />
-                    </StackLayout>
+                    </StackLayout>-->
                     <!-- where MyView is a ContentView -->
                 </DataTemplate>
             </cv:CarouselViewControl.ItemTemplate>

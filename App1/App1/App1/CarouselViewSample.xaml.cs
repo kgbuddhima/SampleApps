@@ -11,7 +11,8 @@ using Xamarin.Forms.Xaml;
 
 namespace App1
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
+    // https://github.com/alexrainman/CarouselView
+    [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class CarouselViewSample : ContentPage
 	{
         MainViewModel _vm;
