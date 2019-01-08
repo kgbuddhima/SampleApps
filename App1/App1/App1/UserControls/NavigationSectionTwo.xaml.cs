@@ -39,15 +39,21 @@ namespace App1.UserControls
 
         public NavigationSectionTwo ()
 		{
-			InitializeComponent ();
+            InitializeComponent ();
             stackLayoutHeader.StartColor = StartColor;
             stackLayoutHeader.EndColor = EndColor;
             stackLayoutHeader.Mode = Mode;
         }
 
-        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            await Navigation.PopAsync();
+            // await Navigation.PopAsync();
+            BackButtonClicked?.Invoke(null, null);
         }
+
+        public OnBackButtonPressed BackButtonClicked { get; set; }
+
     }
+
+    public delegate void OnBackButtonPressed(object sender, EventArgs e);
 }

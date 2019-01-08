@@ -74,6 +74,9 @@
     <None Update="MonkeysPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
+    <None Update="PageWithNavigationUCView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
     <None Update="PickerForDatesSample.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
@@ -84,6 +87,12 @@
       <Generator>MSBuild:Compile</Generator>
     </None>
     <None Update="UserControls\CarouselUCView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="UserControls\NavigationSection.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Update="UserControls\NavigationSectionTwo.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
     <None Update="UserControls\View1.xaml">

@@ -7,10 +7,10 @@
     <ContentPage.Content>
         <StackLayout Spacing="0">
             <uc:NavigationSection />
-            <uc:NavigationSectionTwo StartColor="Yellow" EndColor="LightSeaGreen" Mode="ToTop"
-                HeadingText="Test Heading !" />
-            <uc:NavigationSectionTwo StartColor="Orange" EndColor="Yellow" Mode="ToBottomLeft"
-                HeadingText="Test Heading Two !" />
+            <uc:NavigationSectionTwo x:Name="NavStackOne" StartColor="Yellow" EndColor="LightSeaGreen" Mode="ToTop"
+                HeadingText="Test Heading !" BackButtonClicked="Navigateback1" />
+            <uc:NavigationSectionTwo x:Name="NavStackTwo" StartColor="Orange" EndColor="Yellow" Mode="ToBottomLeft"
+                HeadingText="Test Heading Two !"/>
             <Label Text="Gradient Testing"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
