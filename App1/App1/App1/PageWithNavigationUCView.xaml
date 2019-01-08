@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:uc="clr-namespace:App1.UserControls;assembly=App1"
+             xmlns:uc="clr-namespace:App1.UserControls;assembly=App1"   
              NavigationPage.HasNavigationBar="false"
              x:Class="App1.PageWithNavigationUCView">
     <ContentPage.Content>
-        <StackLayout Spacing="0">
+        <StackLayout Spacing="2">
             <uc:NavigationSection />
             <uc:NavigationSectionTwo x:Name="NavStackOne" StartColor="Yellow" EndColor="LightSeaGreen" Mode="ToTop"
                 HeadingText="Test Heading !" BackButtonClicked="Navigateback1" />

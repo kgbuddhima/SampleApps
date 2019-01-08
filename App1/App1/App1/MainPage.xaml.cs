@@ -58,5 +58,10 @@ namespace App1
         {
             Navigation.PushAsync(new PageWithNavigationUCView());
         }
+
+        private void BtnEntryBorderDemo_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new EntryWithBorderDemo());
+        }
     }
 }

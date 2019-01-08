@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1.Renderers;assembly=App1"
+             x:Class="App1.EntryWithBorderDemo">
+    <ContentPage.Content>
+        <StackLayout Padding="10,10,10,10">
+            <local:EntryWithBorder CornerRadius="1"  
+                             IsCurvedCornersEnabled="True"  
+                             BorderColor="BlueViolet"
+                             BorderWidth="2"
+                             HorizontalTextAlignment="Start"  
+                             FontSize="17"
+                             Placeholder="Custom Entry"  
+                             PlaceholderColor="Gray"  
+                             TextColor="Black"  
+                             FontAttributes="Bold"/>
+            <local:EntryWithBorder CornerRadius="18"  
+                             IsCurvedCornersEnabled="True"  
+                             BorderColor="OrangeRed"
+                             BorderWidth="2"
+                             HorizontalTextAlignment="Center"  
+                             FontSize="17"
+                             Placeholder="Custom Entry"  
+                             PlaceholderColor="Gray"  
+                             TextColor="Black"  
+                             FontAttributes="Bold"/>
+            <local:EntryWithBorder CornerRadius="0"  
+                             IsCurvedCornersEnabled="True"  
+                             BorderColor="OrangeRed"
+                             BorderWidth="0"
+                             HorizontalTextAlignment="Start"  
+                             FontSize="Large"
+                             Placeholder="Custom Entry"  
+                             PlaceholderColor="LightSteelBlue"  
+                             TextColor="Blue"  
+                             FontAttributes="Bold"/>
+            <local:EntryWithBorder CornerRadius="10"  
+                             IsCurvedCornersEnabled="True"  
+                             BorderColor="OrangeRed"
+                             BorderWidth="2"
+                             HorizontalTextAlignment="Start"  
+                             FontSize="Large"
+                             Placeholder="Custom Entry"  
+                             PlaceholderColor="LightSteelBlue"  
+                             TextColor="Blue"  
+                             FontAttributes="Bold"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
