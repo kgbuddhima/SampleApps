@@ -4,18 +4,20 @@
              xmlns:local="clr-namespace:App1"
              x:Class="App1.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Button x:Name="btnDatePicker" Text="Date Picker Sample" Clicked="BtnDatePicker_Clicked"/>
-        <Button x:Name="btnPicerForDates" Text="Date PickerPicker for dates Sample" Clicked="BtnPicerForDates_Clicked"/>
-        <Button x:Name="btnProgressbarSample" Text="Progress bar Sample" Clicked="BtnProgressbarSample_Clicked"/>
-        <Button x:Name="btnSliderSample" Text="Slider Sample" Clicked="BtnSliderSample_Clicked"/>
-        <Button x:Name="btnCarouselViewSample" Text="Carousel View Sample" Clicked="BtnCarouselViewSample_Clicked"/>
-        <Button x:Name="btnCarouselViewSample2" Text="Carousel View Sample 2" Clicked="BtnCarouselViewSample2_Clicked"/>
-        <Button x:Name="btnCarouselViewMonkeys" Text="Carousel View Monkeys" Clicked="BtnCarouselViewMonkeys_Clicked"/>
-        <Button x:Name="btnNavigationSectionDemo" Text="Navigation section demo" Clicked="BtnNavigationSectionDemo_Clicked"/>
-        <Button x:Name="btnEntryBorderDemo" Text="Entry with Border demo" Clicked="BtnEntryBorderDemo_Clicked"/>
-        <Button x:Name="btnEditorBorderDemo" Text="Editor with Border demo" Clicked="BtnEditorBorderDemo_Clicked"/>
-    </StackLayout>
-
+    <ScrollView>
+        <StackLayout>
+            <!-- Place new controls here -->
+            <Button x:Name="btnDatePicker" Text="Date Picker Sample" Clicked="BtnDatePicker_Clicked"/>
+            <Button x:Name="btnDateBorderDemo" Text="Date with Border demo" Clicked="BtnDateBorderDemo_Clicked"/>
+            <Button x:Name="btnPicerForDates" Text="Date PickerPicker for dates Sample" Clicked="BtnPicerForDates_Clicked"/>
+            <Button x:Name="btnProgressbarSample" Text="Progress bar Sample" Clicked="BtnProgressbarSample_Clicked"/>
+            <Button x:Name="btnSliderSample" Text="Slider Sample" Clicked="BtnSliderSample_Clicked"/>
+            <Button x:Name="btnCarouselViewSample" Text="Carousel View Sample" Clicked="BtnCarouselViewSample_Clicked"/>
+            <Button x:Name="btnCarouselViewSample2" Text="Carousel View Sample 2" Clicked="BtnCarouselViewSample2_Clicked"/>
+            <Button x:Name="btnCarouselViewMonkeys" Text="Carousel View Monkeys" Clicked="BtnCarouselViewMonkeys_Clicked"/>
+            <Button x:Name="btnNavigationSectionDemo" Text="Navigation section demo" Clicked="BtnNavigationSectionDemo_Clicked"/>
+            <Button x:Name="btnEntryBorderDemo" Text="Entry with Border demo" Clicked="BtnEntryBorderDemo_Clicked"/>
+            <Button x:Name="btnEditorBorderDemo" Text="Editor with Border demo" Clicked="BtnEditorBorderDemo_Clicked"/>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

@@ -68,5 +68,10 @@ namespace App1
         {
             Navigation.PushAsync(new EditorWithBorderDemo());
         }
+
+        private void BtnDateBorderDemo_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new CustomDatePickerDemo());
+        }
     }
 }
