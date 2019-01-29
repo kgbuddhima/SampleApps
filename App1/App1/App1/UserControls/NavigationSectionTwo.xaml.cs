@@ -40,9 +40,9 @@ namespace App1.UserControls
         public NavigationSectionTwo ()
 		{
             InitializeComponent ();
-            stackLayoutHeader.StartColor = StartColor;
-            stackLayoutHeader.EndColor = EndColor;
-            stackLayoutHeader.Mode = Mode;
+            //stackLayoutHeader.StartColor = StartColor;
+            //stackLayoutHeader.EndColor = EndColor;
+            //stackLayoutHeader.Mode = Mode;
         }
 
         private void TapGestureRecognizer_Tapped(object sender, EventArgs e)

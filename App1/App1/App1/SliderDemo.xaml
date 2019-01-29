@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1.Renderers;assembly=App1"
              x:Class="App1.SliderDemo">
     <ContentPage.Content>
         <StackLayout>
@@ -14,9 +15,11 @@
                     </OnPlatform>
                 </Label.Margin>
             </Label>
-            <Slider x:Name="slidertest"  Maximum="100" Minimum="0" MaximumTrackColor="Pink" MinimumTrackColor="Purple"  
+            <Slider x:Name="slidertest"  Maximum="12000" Minimum="100" MaximumTrackColor="Pink" MinimumTrackColor="Purple"  
                ThumbColor="Purple"
                 HorizontalOptions="FillAndExpand" ValueChanged="Slidertest_ValueChanged"></Slider>
+            <local:CustomSlider x:Name="slidertest2"  Maximum="1000" Minimum="0" MaximumTrackColor="Green" MinimumTrackColor="Yellow"
+                HorizontalOptions="FillAndExpand"></local:CustomSlider>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

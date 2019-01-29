@@ -63,5 +63,10 @@ namespace App1
         {
             Navigation.PushAsync(new EntryWithBorderDemo());
         }
+
+        private void BtnEditorBorderDemo_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new EditorWithBorderDemo());
+        }
     }
 }

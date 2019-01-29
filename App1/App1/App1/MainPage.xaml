@@ -15,6 +15,7 @@
         <Button x:Name="btnCarouselViewMonkeys" Text="Carousel View Monkeys" Clicked="BtnCarouselViewMonkeys_Clicked"/>
         <Button x:Name="btnNavigationSectionDemo" Text="Navigation section demo" Clicked="BtnNavigationSectionDemo_Clicked"/>
         <Button x:Name="btnEntryBorderDemo" Text="Entry with Border demo" Clicked="BtnEntryBorderDemo_Clicked"/>
+        <Button x:Name="btnEditorBorderDemo" Text="Editor with Border demo" Clicked="BtnEditorBorderDemo_Clicked"/>
     </StackLayout>
 
 </ContentPage>

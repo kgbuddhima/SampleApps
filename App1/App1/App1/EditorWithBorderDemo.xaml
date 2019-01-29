@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1.Renderers;assembly=App1"
+             x:Class="App1.EditorWithBorderDemo">
+    <ContentPage.Content>
+        <StackLayout Padding="10,10,10,10">
+            <local:EditorWithBorder 
+                CornerRadius="1"  
+                             IsCurvedCornersEnabled="True"  
+                             BorderColor="BlueViolet"
+                             BorderWidth="2"
+                             FontSize="17"
+                             Placeholder="Custom Editor"  
+                             PlaceholderColor="Gray"  
+                             TextColor="Black"  
+                             FontAttributes="Bold"
+                HeightRequest="150"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
