@@ -29,6 +29,7 @@ namespace App1
             }
             dtPicker.ItemsSource = datesList.ToList();
             dtPicker2.ItemsSource = datesList.ToList();
+            pickerUC.PickerItemSource= datesList;
         }
 
         private void BtnTest_Clicked_1(object sender, EventArgs e)
