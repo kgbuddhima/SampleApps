@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:App1.ViewModel;assembly=App1"
+             x:Class="App1.SliderWithMessaging">
+    <ContentPage.BindingContext>
+        <viewmodels:SliderWithMessagingViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Slider with mesaging center"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Slider x:Name="SliderA" HorizontalOptions="FillAndExpand" MaximumTrackColor="Blue" MinimumTrackColor="Pink" ThumbColor="Black"
+                 />
+            <StackLayout Orientation="Horizontal">
+                <Label Text="{Binding SliderMin}" HorizontalOptions="Start"></Label>
+                <Label Text="{Binding SliderVal}" HorizontalOptions="CenterAndExpand"></Label>
+                <Label Text="{Binding SliderMax}" HorizontalOptions="End"></Label>
+            </StackLayout>
+            <!--Maximum="{Binding SliderMax}" Minimum="{Binding SliderMin}" Value="{Binding SliderVal}"-->
+            <Entry Text="{Binding MaxEntry}"/>
+            <Entry Text="{Binding MinEntry}"/>
+            <Entry Text="{Binding ValueEntry}"/>
+            <Button Text="Calculate" Command="{Binding CalculateValuesCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

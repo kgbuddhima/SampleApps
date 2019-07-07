@@ -88,6 +88,8 @@
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
     <Compile Include="Renderers\CustomDatePickerRenderer.cs" />
+    <Compile Include="Renderers\CustomNavigationRenderercs.cs" />
+    <Compile Include="Renderers\CustomPickerRenderer.cs" />
     <Compile Include="Renderers\EditorWithBorderRenderer.cs" />
     <Compile Include="Renderers\EntryWithBorderRenderer.cs" />
     <Compile Include="Renderers\GradientColorStackRenderer.cs" />
@@ -97,6 +99,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\Poppins-Light.ttf" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />

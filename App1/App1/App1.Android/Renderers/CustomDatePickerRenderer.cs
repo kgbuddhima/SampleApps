@@ -50,6 +50,9 @@ namespace App1.Droid.Renderers
                     Control.SetBackground(_gradientBackground);
 
                     Control.Gravity = GravityFlags.CenterHorizontal;
+
+                    //Control.SetHint();
+                    Control.SetHintTextColor(Android.Graphics.Color.Gray);
                 }
 
                 CustomDatePicker element = Element as CustomDatePicker;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using App1.Renderers;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -13,7 +14,7 @@ namespace App1
             Plugin.Iconize.Iconize.With(new Plugin.Iconize.Fonts.FontAwesomeSolidModule())
                 .With(new Plugin.Iconize.Fonts.FontAwesomeRegularModule())
                 .With(new Plugin.Iconize.Fonts.FontAwesomeBrandsModule());
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new CustomNavigationPage(new MainPage());
         }
 
         protected override void OnStart()

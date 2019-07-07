@@ -1,11 +1,83 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1.Renderers;assembly=App1"
+             xmlns:viewmodels="clr-namespace:App1.ViewModel"
              x:Class="App1.PickerForDatesSample">
+    <ContentPage.BindingContext>
+        <viewmodels:PickerForDatesSampleViewModel/>
+    </ContentPage.BindingContext>
     <ContentPage.Content>
-        <StackLayout>
-            <Picker x:Name="dtPicker"></Picker>
+        <StackLayout Padding="20,20,20,20">
+            
             <Button Text="Test dates" x:Name="btnTest1" Clicked="BtnTest_Clicked_1"/>
-        </StackLayout>
+            <Button Text="Focus Picker" x:Name="btnFocusPicker" Clicked="BtnFocusPicker_Clicked"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <local:CustomPicker x:Name="dtPicker" Grid.Row="0" Grid.Column="0"
+                        IsVisible="False" SelectedItem="{Binding SelectedDate}"/>
+                <local:EntryWithBorder Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                                       x:Name="txtPicker"
+                             Text="{Binding SelectedDateOfEntry}"
+                             CornerRadius="1"
+                             IsCurvedCornersEnabled="True"  
+                             BorderColor="BlueViolet"
+                             BorderWidth="2"
+                             HorizontalTextAlignment="Start"  
+                             FontSize="17"
+                             Placeholder="Custom Entry"  
+                             PlaceholderColor="Gray"  
+                             TextColor="Black"/>
+                <BoxView Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"
+                         BackgroundColor="#669900">
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="BtnFocusPicker_Clicked"/>
+                    </BoxView.GestureRecognizers>
+                </BoxView>
+                <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"
+                       Text=">>" TextColor="White" FontAttributes="Bold"
+                       HorizontalOptions="Center" HorizontalTextAlignment="Center"
+                       VerticalOptions="Center" VerticalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="BtnFocusPicker_Clicked"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <local:CustomPicker x:Name="dtPicker2" 
+                                    Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="3"/>
+                <BoxView Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"
+                         BackgroundColor="#669900">
+                    <BoxView.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </BoxView.GestureRecognizers>
+                </BoxView>
+                <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"
+                       Text=">>" TextColor="White" FontAttributes="Bold"
+                       HorizontalOptions="Center" HorizontalTextAlignment="Center"
+                       VerticalOptions="Center" VerticalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Label.GestureRecognizers>
+                </Label>
+            </Grid>
+            
+        </StackLayout> 
     </ContentPage.Content>
 </ContentPage>

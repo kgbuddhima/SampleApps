@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,7 @@ namespace App1
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class PickerForDatesSample : ContentPage
 	{
-		public PickerForDatesSample ()
+        public PickerForDatesSample ()
 		{
 			InitializeComponent ();
 		}
@@ -27,12 +28,25 @@ namespace App1
                 datesList.Add(dt.ToString("yyyy-MM-dd"));
             }
             dtPicker.ItemsSource = datesList.ToList();
-
+            dtPicker2.ItemsSource = datesList.ToList();
         }
 
         private void BtnTest_Clicked_1(object sender, EventArgs e)
         {
             GetDates();
+        }
+
+        private void BtnFocusPicker_Clicked(object sender, EventArgs e)
+        {
+            dtPicker.Focus();
+            //txtPicker.Focus();
+            dtPicker.Unfocus();
+        }
+
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            dtPicker2.Focus();
+            dtPicker2.Unfocus();
         }
     }
 }

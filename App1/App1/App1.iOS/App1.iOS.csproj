@@ -92,6 +92,9 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Renderers\CustomDatePickerRenderer.cs" />
+    <Compile Include="Renderers\CustomNavigationRenderercs.cs" />
+    <Compile Include="Renderers\EditorWithBorderRenderer.cs" />
     <Compile Include="Renderers\EntryWithBorderRenderer.cs" />
     <Compile Include="Renderers\GradientColorStackRendererAdvanced.cs" />
     <None Include="Entitlements.plist" />
@@ -99,6 +102,7 @@
       <SubType>Designer</SubType>
     </None>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\Poppins-Light.ttf" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -178,5 +182,20 @@
       <Project>{F06BFFAA-9155-4131-9F97-8C820485EB70}</Project>
       <Name>App1</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\image2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\c1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\c2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\c3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\image1.png" />
   </ItemGroup>
 </Project>

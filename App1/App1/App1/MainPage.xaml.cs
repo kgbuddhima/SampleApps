@@ -66,12 +66,27 @@ namespace App1
 
         private void BtnEditorBorderDemo_Clicked(object sender, EventArgs e)
         {
+            NavigationPage page = new NavigationPage(new EditorWithBorderDemo())
+            {
+                BarBackgroundColor = Color.Red,
+                BarTextColor = Color.White
+            };
             Navigation.PushAsync(new EditorWithBorderDemo());
         }
 
         private void BtnDateBorderDemo_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new CustomDatePickerDemo());
+        }
+
+        private void BtnSliderWithMessagingSample_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SliderWithMessaging());
+        }
+
+        private void BtnMasterCustomNav_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MasterPageCustomNavBar());
         }
     }
 }
